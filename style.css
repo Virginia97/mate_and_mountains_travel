@@ -20,11 +20,13 @@ body {
 } */
 
 nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     background-color: #a5b0c4;
     align-items: center;
     text-align: right;
     padding: 20px;
-    position: sticky;
 }
 
 nav ul {
