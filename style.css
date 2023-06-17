@@ -1,17 +1,15 @@
-html {
-    text-align: center;
+html, body {
+    padding: 0;
+    margin: 0;
     width: 100%;
-    margin: 0%;
 }
 
 body {
     background-color: aliceblue;
     font-family: 'Urbanist', sans-serif;
-    width: 100%;
-    margin: 0%;
 }
 
-.fila>div {
+/* .fila>div {
     display: inline-block;
     width: 48%;
 }
@@ -19,10 +17,10 @@ body {
 .fila img {
     width: 50%;
     height: auto;
-}
+} */
 
 nav {
-    background-color: #E8834B;
+    background-color: #a5b0c4;
     align-items: center;
     text-align: right;
     padding: 20px;
@@ -56,61 +54,63 @@ nav a:hover {
 }
 
 
-.container {
-    position: relative;
-    display: flex;
-    padding: 0%;
+section, footer {
+    padding: 5em;
+    min-height: 100%;
+    justify-content: center;
+}
+
+footer {
+    background-color: #274001;
+    color: white;
+}
+
+.home {
+    background-image: url(./multimedia/img/llao-llao.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+#destinos {
+    padding-right: 0
+}
+
+#destinos img {
+    height: auto;
+    object-fit: contain;
 }
 
 h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    text-align: center;
-    padding: 10px;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+h3 {
     font-weight: bold;
 }
 
-.portada{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.744); /* Color negro con 50% de opacidad */
-    opacity: 0.7;
+p {
+    font-size: 1.2em;
 }
 
-.portada img {
-    max-width: 100%;
-    height: 100%;
-}
-
-.sobreNosotros div {
-    text-align: left;
+.sobreNosotros {
     font-size: large;
 }
 
 .sobreNosotros img {
-    width: 100%;
     height: auto;
-}
-
-.textLeft {
-    text-align: left;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    padding-top: 10%;
-}
-
-.sobreNosotros {
-    text-align: center;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .valores {
-    width: 100%;
-    display: inline-block;
-    margin: 25px;
     text-align: center;
 }
 
@@ -137,7 +137,6 @@ h1 {
 
 .card p {
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
 .mapa {
@@ -145,16 +144,7 @@ h1 {
     width: 100%;
 }
 
-.contacto {
-    background-color: #E8834B;
-}
-
-.contacto p,
-h4 {
-    color: #fff;
-}
-
-.contacto img {
+.rrss-icons img {
     display: inline-block;
     width: 50px;
     padding: 10px;
